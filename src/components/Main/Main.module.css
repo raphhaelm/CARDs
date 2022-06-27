@@ -1,41 +1,70 @@
 .container {
-    width: 80vw;
-    height: 90vh;
+    width: 100vw;
+    height: 99vh;
     display: flex;
     flex-direction: column;
+    padding: 1em;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+}
+
+.container h1 {
+    text-shadow: 3px 3px white;
+    font-size: 44px;
+}
+
+.container section {
+    background-image: url('../../assents/profile.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15vw;
+    height: 30vh;
+    border-radius: 50%;
+}
+
+.container header {
+    padding-top: 1em;
+    display: flex;    
+    align-items: center;
+    width: 96%;
+    height: 50%;
+    border-radius: 20px;
+    background-color: silver;
+}
+.header div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+
+}
+.container main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header p {
+    padding: 20px;
 }
 
 @media (max-width: 991px) {
     .container {
-        justify-content: space-between;
-        padding: 1em;
-        height: 99vh;
-        width: 100vw;
-        background-color: black;
-
+        justify-content:  center;
     }
-
-    .container h1 {
-        text-shadow: 3px 3px white;
-        font-size: 44px;
-    }
-
     .container section {
-        background-image: url('../../assents/profile.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 40%;
-        height: 50%;
-        border-radius: 50%;
+        width: 35vw;
+        height: 25vh;
     }
+
     .container header {
-        padding-top: 1em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 90%;
-        height: 50%;
+        height: 40%;
         border-radius: 10%;
-        background-color: silver;
+        flex-direction: column;
+    }
+    .header p {
+        display: none;
     }
 }

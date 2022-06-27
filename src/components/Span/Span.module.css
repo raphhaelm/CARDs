@@ -1,24 +1,64 @@
+.container {
+    column-gap: 25px;
+    display: flex;
+    padding: 1em;
+    height: auto;
+    width: 45.5vw;
+    margin: 2px;
+    justify-content: center;
+    background-color: silver;
+    border-radius: 10px;
+}
+.container span, .container i{
+    
+    color: #FFFFFF;
+}
+.container a{
+    display: inline-flex;
+    align-items: center;
+    transition-property: 
+    outline-offset, outline-color, background-color;
+    transition-duration: .25s;
+    
+}
+.container:hover{
+    animation: shake .25s;
+    outline-offset: 4px;
+    outline-color: #a02d76;
+}
+
+.text {
+    width: 70%;
+    font-size: 40px;
+}
+.container a {
+    width: 60%;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.container :active {
+    text-decoration: none;
+}
+
+
 @media (max-width: 991px) {
     .container {
-        padding: 1em;
-        height: auto;
-        width: 77vw;
-        margin: 10px;
-        justify-content: center;
-        background-color: silver;
-        border-radius: 10px;
+        width: 80vw;
+        margin: 4px;
+    } 
 
+    .text {
+        width: 70%;
     }
-    .container a {
-        text-decoration: none;
-        font-size: 30px;
-        font-weight: 700;
-        color: black;
-    }
-    .container :active {
-        text-decoration: none;
-    }
-    .container:hover{
-        background-color: rgb(244, 244, 244);
-    }
+
+}
+@keyframes shake {
+    10%{transform: rotate(0.8deg);}
+    20%{transform: rotate(-0.8deg);}
+    30%{transform: rotate(0.8deg);}
+    40%{transform: rotate(-0.8deg);}
+
 }
