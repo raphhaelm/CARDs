@@ -16,11 +16,6 @@ function Main() {
     function backgroundEmail(e) {
         e.target.style.background = "#8B0000"
     }
-    function out(e) {
-        console.log('Foudasse')
-
-
-    }
     return (
         <div className={styles.container}>
             <header className={styles.header}>
@@ -31,7 +26,7 @@ function Main() {
                 <div>
                     <p>
                         Desenvolvedor web fullstack, 30 anos,<br /> Belo Horizonte /MG. <br />
-                        Atuo como técnico em informáica há 10 anos.  <br />
+                        Atuo como técnico em informática há 10 anos.  <br />
                         Estudei Javascript, HTML5, CSS3, Node.js, SQL, ReactJs e Express no curso de desenvolvedor web da Resilia Educação.
                     </p>
                 </div>
