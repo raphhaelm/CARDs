@@ -1,7 +1,5 @@
-.container {
-    column-gap: 25px;
+.container {column-gap: 25px;
     display: flex;
-    padding: 1em;
     height: auto;
     width: 45.5vw;
     margin: 2px;
@@ -9,11 +7,16 @@
     background-color: silver;
     border-radius: 10px;
 }
-.container span, .container i{
+.container div {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.container span, .container i {
     
     color: #FFFFFF;
 }
-.container a{
+.container a {
     display: inline-flex;
     align-items: center;
     transition-property: 
@@ -21,32 +24,42 @@
     transition-duration: .25s;
     
 }
-.container:hover{
+.container:hover {
     animation: shake .25s;
     outline-offset: 4px;
     outline-color: #a02d76;
+    border: white solid 2px;
+}
+.containerWhatsapp:hover {
+    background-color:#34af23;
+}
+.containerLinkedin:hover {
+    background-color:  #007bb6;
+}
+.containerGithub:hover {
+    background-color: #010409;
+}
+.containerEmail:hover {
+    background-color: #da4d39;
 }
 
 .text {
-    width: 70%;
+    width: 100%;
     font-size: 40px;
 }
 .container a {
-    width: 60%;
     text-decoration: none;
-    font-size: 30px;
-    font-weight: 700;
-    color: black;
+    font-weight: 600;
 }
 
-.container :active {
+.container:active {
     text-decoration: none;
 }
 
 
 @media (max-width: 991px) {
     .container {
-        width: 80vw;
+        width: 88vw;
         margin: 4px;
     } 
 
